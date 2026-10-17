@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" href="assets/logo/logo.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Davi Nascimento — Full Stack Developer & UI/UX Designer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<header>
+  <div class="container nav">
+    <a href="#" class="logo" aria-label="Portfólio — início"><img data-logo alt="" width="38" height="38"><span>Portfólio</span></a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menu"><span>Menu</span><span class="mb-icon" aria-hidden="true"><i></i><i></i></span></button>
+  </div>
+</header>
+
+<div class="menu" id="menu" aria-hidden="true" inert>
+  <div class="menu-bg"></div>
+  <div class="menu-content">
+    <div class="menu-left">
+      <div class="menu-top"><a href="#" class="logo" aria-label="Portfólio — início"><img data-logo alt="" width="38" height="38"><span>Portfólio</span></a></div>
+      <nav class="menu-links" id="menuLinks" aria-label="Principal">
+        <a href="#sobre"><span class="ml-mask"><span class="ml-text" style="--i:0">Sobre</span></span><span class="ml-sub">quem sou</span></a>
+        <a href="#skills"><span class="ml-mask"><span class="ml-text" style="--i:1">Skills</span></span><span class="ml-sub">ferramentas</span></a>
+        <a href="#projetos"><span class="ml-mask"><span class="ml-text" style="--i:2">Projetos</span></span><span class="ml-sub">trabalhos</span></a>
+        <a href="#experiencia"><span class="ml-mask"><span class="ml-text" style="--i:3">Experiência</span></span><span class="ml-sub">trajetória</span></a>
+        <a href="#contato"><span class="ml-mask"><span class="ml-text" style="--i:4">Contato</span></span><span class="ml-sub">vamos conversar</span></a>
+      </nav>
+      <div class="menu-foot"><a href="mailto:davi.nascimento0907@gmail.com" data-contact>davi.nascimento0907@gmail.com</a><a href="#">LinkedIn</a><a href="#">GitHub</a><a href="#">Instagram</a><a href="#" data-wa>WhatsApp</a></div>
+    </div>
+    <figure class="menu-photo">
+      <div class="mp-frame"><img class="mp-img" id="mpA" alt=""><img class="mp-img" id="mpB" alt=""></div>
+      <figcaption class="mp-cap" id="mpCap"><h3 id="mpTitle"></h3><p id="mpSub"></p></figcaption>
+      <div class="menu-marquee" aria-hidden="true"><div class="mq-track">
+        <span>Full Stack Developer</span><i></i><span>UI/UX Designer</span><i></i><span>Motion e 3D</span><i></i><span>Do conceito ao deploy</span><i></i>
+        <span>Full Stack Developer</span><i></i><span>UI/UX Designer</span><i></i><span>Motion e 3D</span><i></i><span>Do conceito ao deploy</span><i></i>
+      </div></div>
+    </figure>
+  </div>
+  <div class="menu-badge" aria-hidden="true">
+    <svg viewBox="0 0 200 200"><defs><path id="circ" d="M100,100 m-72,0 a72,72 0 1,1 144,0 a72,72 0 1,1 -144,0"/></defs><circle cx="100" cy="100" r="98" fill="#fff"/><text font-family="Space Grotesk, sans-serif" font-weight="600" font-size="16.5" fill="#0b3a9e" letter-spacing="2.4"><textPath href="#circ">full stack ✦ ui/ux design ✦ motion ✦ 3D ✦ </textPath></text></svg>
+    <span class="bd-core"><img data-logo alt="" width="46" height="46"></span>
+  </div>
+  <button class="menu-close" id="menuClose" aria-label="Fechar menu"><span>Fechar</span><span class="mc-x" aria-hidden="true"></span></button>
+</div>
+
+<section class="hero">
+  <img class="hero-mark" data-logo alt="" aria-hidden="true">
+  <span class="corner-mark cm-tl"></span>
+  <span class="corner-mark cm-tr"></span>
+  <span class="corner-mark cm-bl"></span>
+  <span class="corner-mark cm-br"></span>
+
+  <div class="hero-photo"><img id="heroPhoto" alt="Davi Nascimento"></div>
+  <div class="container hero-grid">
+    <div class="hero-copy">
+    <p class="coord"> SÃO PAULO / DEV × DESIGN</p>
+    <h1 class="name">Davi<br><span class="fade">Nascimento</span></h1>
+    <div class="role-line">
+      <span class="bar"></span>
+      <p>Full Stack Developer <b>&</b> UI/UX Designer</p>
+    </div>
+    <p class="hero-desc">Um perfil híbrido entre código e design: penso a interface, desenho o sistema visual e construo a base que sustenta tudo — do conceito ao deploy.</p>
+    <div class="hero-cta">
+      <a href="#projetos" class="btn btn-primary">Ver projetos</a>
+      <a href="https://wa.me/5511913521799?text=Opa%2C%20tudo%20bem%3F" class="btn btn-ghost">Entrar em contato</a>
+    </div>
+    </div>
+    
+  </div>
+
+  <div class="scroll-hint"><span class="stem"></span>scroll</div>
+</section>
+
+<section id="sobre">
+  <div class="container">
+    <div class="sec-head">
+      <span class="sec-num">01</span>
+      <h2 class="sec-title">Sobre</h2>
+      <span class="sec-line"></span>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>Trabalho na fronteira entre <b>desenvolvimento e design</b> — não como duas especialidades separadas, mas como uma única forma de pensar produto: a estrutura de dados e a experiência do usuário nascem juntas, na mesma prancheta.</p>
+        <p>Já conduzi projetos de <b>e-commerce do zero</b>, cuidando do banco de dados, das integrações com marketplaces e da interface final — sempre com foco em conversão e em métricas reais de uso, não só em telas bonitas.</p>
+        <p>Hoje curso <b>Engenharia da Computação na UNIVESP</b> e sigo ampliando o lado técnico da minha formação, que já inclui certificações em desenvolvimento de sistemas, jogos digitais e computação gráfica.</p>
+      </div>
+
+      <div class="about-stats reveal">
+        <div class="stat-block">
+          <div class="stat-num">1500+</div>
+          <div class="stat-label">Vendas em ecommerce na Scuderia Pro Autoparts, com integrações Mercado Livre e Shopee</div>
+        </div>
+        <div class="stat-block">
+          <div class="stat-num">300+</div>
+          <div class="stat-label">produtos organizados para conversão na plataforma da Protect World que eu desenvolvi</div>
+        </div>
+        <div class="stat-block">
+          <div class="stat-num">3</div>
+          <div class="stat-label">certificações técnicas — Compuitação gráfica (Saga), Desenvolvimento de Sistemas, Jogos Digitais (Etec)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="container">
+    <div class="sec-head">
+      <span class="sec-num">02</span>
+      <h2 class="sec-title">Camadas de trabalho</h2>
+      <span class="sec-line"></span>
+    </div>
+
+    <div class="tabs" id="tabs">
+      <button class="tab-btn active" data-tab="design">Design</button>
+      <button class="tab-btn" data-tab="front">Front-end</button>
+      <button class="tab-btn" data-tab="back">Back-end</button>
+      <button class="tab-btn" data-tab="3d">3D & Motion</button>
+    </div>
+
+    <div class="tab-panel active" data-panel="design">
+      <div class="skill-grid">
+        <div class="skill-cell"><span class="sk-name">Figma</span><span class="sk-tag">prototipação & UI</span></div>
+        <div class="skill-cell"><span class="sk-name">Photoshop</span><span class="sk-tag">edição raster</span></div>
+        <div class="skill-cell"><span class="sk-name">Illustrator</span><span class="sk-tag">vetor & identidade</span></div>
+        <div class="skill-cell"><span class="sk-name">XD</span><span class="sk-tag">wireframe & fluxo</span></div>
+        <div class="skill-cell"><span class="sk-name">Canva</span><span class="sk-tag">produção rápida</span></div>
+        <div class="skill-cell"><span class="sk-name">Krita</span><span class="sk-tag">ilustração digital</span></div>
+        <div class="skill-cell"><span class="sk-name">Aftereffects</span><span class="sk-tag">Motion Design</span></div>
+      </div>
+    </div>
+
+    <div class="tab-panel" data-panel="front">
+      <div class="skill-grid">
+        <div class="skill-cell"><span class="sk-name">JavaScript</span><span class="sk-tag">lógica de interface</span></div>
+        <div class="skill-cell"><span class="sk-name">React</span><span class="sk-tag">componentização</span></div>
+        <div class="skill-cell"><span class="sk-name">HTML5</span><span class="sk-tag">estrutura</span></div>
+        <div class="skill-cell"><span class="sk-name">CSS3</span><span class="sk-tag">estilo & animação</span></div>
+        <div class="skill-cell"><span class="sk-name">Bootstrap</span><span class="sk-tag">layout responsivo</span></div>
+      </div>
+    </div>
+
+    <div class="tab-panel" data-panel="back">
+      <div class="skill-grid">
+        <div class="skill-cell"><span class="sk-name">PHP</span><span class="sk-tag">back-end web</span></div>
+        <div class="skill-cell"><span class="sk-name">Python</span><span class="sk-tag">automação & lógica</span></div>
+        <div class="skill-cell"><span class="sk-name">MySQL</span><span class="sk-tag">banco de dados</span></div>
+        <div class="skill-cell"><span class="sk-name">C# / Java / C</span><span class="sk-tag">fundamentos</span></div>
+        <div class="skill-cell"><span class="sk-name">WordPress</span><span class="sk-tag">CMS</span></div>
+      </div>
+    </div>
+
+    <div class="tab-panel" data-panel="3d">
+      <div class="skill-grid">
+        <div class="skill-cell"><span class="sk-name">Blender</span><span class="sk-tag">modelagem 3D</span></div>
+        <div class="skill-cell"><span class="sk-name">Spline</span><span class="sk-tag">3D interativo pra web</span></div>
+        <div class="skill-cell"><span class="sk-name">After Effects</span><span class="sk-tag">motion graphics</span></div>
+        <div class="skill-cell"><span class="sk-name">Premiere</span><span class="sk-tag">edição de vídeo</span></div>
+        <div class="skill-cell"><span class="sk-name">Framer</span><span class="sk-tag">prototipagem interativa</span></div>
+        <div class="skill-cell"><span class="sk-name">Unity (C#)</span><span class="sk-tag">jogos & interatividade</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projetos">
+  <div class="container">
+    <div class="sec-head">
+      <span class="sec-num">03</span>
+      <h2 class="sec-title">Projetos</h2>
+      <span class="sec-line"></span>
+    </div>
+
+    <div class="project-grid">
+      <div class="project-card reveal" data-tilt>
+        <div class="car pj-img" data-art="ecom,dash" data-photos="scuderia"></div>
+        <span class="pj-tag">E-COMMERCE / DO ZERO</span>
+        <h3 class="pj-title">Scuderia Pro Autoparts</h3>
+        <p class="pj-desc">Site institucional e de vendas construído do zero, com integrações a Mercado Livre e Shopee. Cadastro completo de catálogo e estrutura pensada para escalar sem depender de terceiros.</p>
+        <div class="pj-stack"><span>PHP</span><span>MySQL</span><span>Mercado Livre API</span><span>Shopee API</span></div>
+        <p class="pj-metric">→ média de 5 pedidos/dia partindo do zero</p>
+      </div>
+
+      <div class="project-card reveal" data-tilt>
+        <div class="car pj-img" data-art="ecom,iso" data-photos="protect-world"></div>
+        <span class="pj-tag">E-COMMERCE / PLATAFORMA COMPLETA</span>
+        <h3 class="pj-title">Protect World</h3>
+        <p class="pj-desc">Plataforma de e-commerce construída de ponta a ponta — do modelo de banco de dados até a interface final — com catálogo organizado para maximizar conversão.</p>
+        <div class="pj-stack"><span>Laravel</span><span>MySQL</span><span>UI/UX</span></div>
+        <p class="pj-metric">→ 300+ produtos organizados para conversão</p>
+      </div>
+
+      <div class="project-card reveal" data-tilt>
+        <div class="car pj-img" data-art="landing,brand" data-photos="system-wave"></div>
+        <span class="pj-tag">LANDING PAGE / INTERNO</span>
+        <h3 class="pj-title">System Wave</h3>
+        <p class="pj-desc">Landing page institucional com um cursor customizado como assinatura de interação — um pequeno detalhe de motion que muda como a página inteira se sente ao navegar.</p>
+        <div class="pj-stack"><span>JavaScript</span><span>CSS animation</span><span>Custom cursor</span></div>
+        <p class="pj-metric">→ testes internos da própria empresa</p>
+      </div>
+
+      <div class="project-card reveal" data-tilt>
+        <div class="car pj-img" data-art="code,ui" data-photos="portfolio"></div>
+        <span class="pj-tag">META / ESTE SITE</span>
+        <h3 class="pj-title">Portfólio pessoal</h3>
+        <p class="pj-desc">Este próprio site: tema blueprint, grid técnico, cursor customizado e transições orquestradas — uma vitrine de como código e design se encontram no meu processo.</p>
+        <div class="pj-stack"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        <p class="pj-metric">→ você está nele agora</p>
+      </div>
+    </div>
+
+    <div class="gallery reveal">
+      <div class="gal-head">
+        <h3>Galeria</h3>
+        <div class="gal-ctrl"><button id="galPrev" aria-label="Anterior">←</button><button id="galNext" aria-label="Próximo">→</button></div>
+      </div>
+      <div class="gal-track" id="galTrack"></div>
+    </div>
+  </div>
+</section>
+
+<section id="experiencia">
+  <div class="container">
+    <div class="sec-head">
+      <span class="sec-num">04</span>
+      <h2 class="sec-title">Experiência</h2>
+      <span class="sec-line"></span>
+    </div>
+
+    <div class="timeline reveal">
+      <div class="tl-item">
+        <p class="tl-period">Freelance</p>
+        <h3 class="tl-role">Web Designer & Desenvolvedor</h3>
+        <p class="tl-org">Projetos autônomos</p>
+        <p class="tl-desc">Atendimento direto a clientes, do briefing à entrega — unindo identidade visual e implementação técnica no mesmo projeto.</p>
+      </div>
+      <div class="tl-item">
+        <p class="tl-period">Experiência profissional</p>
+        <h3 class="tl-role">Desenvolvedor Full Stack</h3>
+        <p class="tl-org">Protect World</p>
+        <p class="tl-desc">Construção completa da plataforma de e-commerce, do banco de dados à interface, com catálogo de 300+ produtos.</p>
+      </div>
+      <div class="tl-item">
+        <p class="tl-period">Experiência profissional</p>
+        <h3 class="tl-role">Desenvolvedor Full Stack</h3>
+        <p class="tl-org">Scuderia Pro Autoparts</p>
+        <p class="tl-desc">Site de e-commerce e institucional criado do zero, com integrações a marketplaces e mais de 500 produtos cadastrados.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="formacao" style="border-bottom:1px solid var(--line);">
+  <div class="container">
+    <div class="sec-head">
+      <span class="sec-num">05</span>
+      <h2 class="sec-title">Formação</h2>
+      <span class="sec-line"></span>
+    </div>
+
+    <div class="edu-grid reveal">
+      <div class="edu-cell">
+        <span class="ed-kind">EM ANDAMENTO</span>
+        <h4 class="ed-name">Engenharia da Computação</h4>
+        <p class="ed-org">UNIVESP</p>
+      </div>
+      <div class="edu-cell">
+        <span class="ed-kind">TÉCNICO</span>
+        <h4 class="ed-name">Desenvolvimento de Sistemas</h4>
+        <p class="ed-org">Etec Prof. Basilides de Godoy</p>
+      </div>
+      <div class="edu-cell">
+        <span class="ed-kind">TÉCNICO</span>
+        <h4 class="ed-name">Jogos Digitais</h4>
+        <p class="ed-org">Etec Prof. Basilides de Godoy</p>
+      </div>
+      <div class="edu-cell">
+        <span class="ed-kind">ESPECIALIZAÇÃO</span>
+        <h4 class="ed-name">Computação Gráfica</h4>
+        <p class="ed-org">Escola SAGA</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contato" class="sec-dark" style="border-bottom:none;">
+  <img class="contact-mark" data-logo alt="" aria-hidden="true">
+  <div class="container">
+    <div class="sec-head">
+      <span class="sec-num">06</span>
+      <h2 class="sec-title">Contato</h2>
+      <span class="sec-line"></span>
+    </div>
+
+    <div class="contact-wrap reveal">
+      <div class="contact-main">
+        <h3 class="contact-ask">Tem um projeto em mente?</h3>
+        <a class="contact-mail" href="mailto:davi.nascimento0907@gmail.com" data-contact>davi.nascimento0907@gmail.com</a>
+      </div>
+      <div class="contact-list">
+        <a href="www.linkedin.com/in/davi-dos-santos-nascimento">LinkedIn <svg viewBox="0 0 12 12" width="11" height="11" aria-hidden="true"><path d="M2 10 L10 2 M4 2 H10 V8" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></a>
+        <a href="https://github.com/DaviNascss">GitHub <svg viewBox="0 0 12 12" width="11" height="11" aria-hidden="true"><path d="M2 10 L10 2 M4 2 H10 V8" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></a>
+        <a href="https://www.instagram.com/davi_nasc_/">Instagram <svg viewBox="0 0 12 12" width="11" height="11" aria-hidden="true"><path d="M2 10 L10 2 M4 2 H10 V8" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></a>
+        <a href="https://wa.me/5511913521799?text=Opa%2C%20tudo%20bem%3F" data-wa>WhatsApp <svg viewBox="0 0 12 12" width="11" height="11" aria-hidden="true"><path d="M2 10 L10 2 M4 2 H10 V8" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container ft"><span>© 2026 Davi Nascimento</span><span>São Paulo, SP — Brasil</span></div>
+</footer>
+
+<div class="modal" id="contactModal" role="dialog" aria-modal="true" aria-labelledby="cmTitle" aria-hidden="true" inert>
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-card">
+    <button class="modal-x" data-close aria-label="Fechar"><svg viewBox="0 0 14 14" width="14" height="14" aria-hidden="true"><path d="M1 1 L13 13 M13 1 L1 13" stroke="currentColor" stroke-width="1.6" fill="none"/></svg></button>
+    <div id="cmForm">
+      <div class="modal-head">
+        <img data-logo alt="" width="44" height="44">
+        <div><h3 id="cmTitle">Vamos conversar?</h3><p>Conte sobre o seu projeto. A resposta chega no e-mail que você informar.</p></div>
+      </div>
+      <form id="contactForm" novalidate>
+        <label><span>Seu nome</span><input type="text" name="name" required autocomplete="name" maxlength="80"></label>
+        <label><span>Seu e-mail</span><input type="email" name="email" required autocomplete="email" maxlength="120"></label>
+        <label><span>Mensagem</span><textarea name="message" rows="4" required maxlength="2000"></textarea></label>
+        <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
+        <button class="btn btn-primary" type="submit" id="sendBtn">Enviar mensagem</button>
+      </form>
+    </div>
+    <div class="modal-ok" id="cmOk" hidden>
+      <svg viewBox="0 0 52 52" width="64" height="64" aria-hidden="true"><circle class="ok-c" cx="26" cy="26" r="23" fill="none" stroke="currentColor" stroke-width="2.5"/><path class="ok-p" d="M15 27 L23 35 L38 18" fill="none" stroke="currentColor" stroke-width="3"/></svg>
+      <h3>Mensagem enviada</h3>
+      <p>Obrigado pelo contato. Eu respondo assim que possível.</p>
+      <button class="btn btn-ghost-dark" type="button" data-close>Fechar</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
